@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Portfolio | Moje Projekty & Boti</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome pro ikony -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigace -->
+    <nav class="navbar">
+        <div class="logo"><i class="fa-brands fa-discord"></i> DevPortfolio</div>
+        <ul class="nav-links">
+            <li><a href="#stats">Statistiky</a></li>
+            <li><a href="#bots">Moje Boti</a></li>
+            <li><a href="#servers">Servery</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Úvodní sekce (Hero) -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Ahoj, já jsem <span class="highlight">[Tvoje Jméno]</span> 👋</h1>
+            <p>Discord Bot Developer & Administrator</p>
+            <a href="#bots" class="btn">Prohlédnout boty</a>
+        </div>
+    </header>
+
+    <!-- Statistiky -->
+    <section id="stats" class="stats-section">
+        <h2>Celkový Přehled</h2>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <i class="fa-solid fa-server"></i>
+                <h3 id="server-count">0</h3>
+                <p>Spravovaných Serverů</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-robot"></i>
+                <h3 id="bot-count">0</h3>
+                <p>Aktivních Botů</p>
+            </div>
+            <div class="stat-card">
+                <i class="fa-solid fa-users"></i>
+                <h3 id="user-count">0</h3>
+                <p>Uživatelů Celkem</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sekce Botů -->
+    <section id="bots" class="bots-section">
+        <h2>Moji Discord Boti</h2>
+        <div class="bots-grid">
+            
+            <!-- Bot 1 -->
+            <div class="bot-card">
+                <div class="bot-status online"></div>
+                <img src="https://via.placeholder.com/100" alt="Bot Avatar" class="bot-img">
+                <h3>SuperBot</h3>
+                <p class="bot-desc">Univerzální moderační a hudební bot s pokročilými funkcemi pro komunity.</p>
+                <div class="bot-tags">
+                    <span>discord.js</span>
+                    <span>Node.js</span>
+                </div>
+                <a href="#" class="btn btn-secondary">Přidat na server</a>
+            </div>
+
+            <!-- Bot 2 -->
+            <div class="bot-card">
+                <div class="bot-status online"></div>
+                <img src="https://via.placeholder.com/100" alt="Bot Avatar" class="bot-img">
+                <h3>EconomyBot</h3>
+                <p class="bot-desc">Zábavný bot s virtuální ekonomikou, minihrami a leveling systémem.</p>
+                <div class="bot-tags">
+                    <span>discord.py</span>
+                    <span>Python</span>
+                </div>
+                <a href="#" class="btn btn-secondary">Přidat na server</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Kontakt / Footer -->
+    <footer id="contact" class="footer">
+        <h2>Spojme se!</h2>
+        <p>Máš zájem o vlastní boty nebo správu serveru?</p>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+            <a href="https://discord.com" target="_blank"><i class="fa-brands fa-discord"></i> Discord Server</a>
+        </div>
+        <p class="copyright">&copy; 2026 Tvoje Jméno. Všechna práva vyhrazena.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
